@@ -57,6 +57,7 @@ struct NavBar: View {
             .background(.thinMaterial)
             .cornerRadius(10)
             .padding()
+            .opacity(0.8)
             
         }
     }
