@@ -9,9 +9,9 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     case house
-    case message
-    case person
-    case leaf
+    case scroll
+    case map
+    case trophy
     case gearshape
 }
 
@@ -24,14 +24,14 @@ struct NavBar: View {
         switch selectedTab {
         case .house:
             return .blue
-        case .message:
+        case .scroll:
+            return .yellow
+        case .map:
             return .green
-        case .person:
-            return .indigo
-        case .leaf:
-            return .green
+        case .trophy:
+            return .yellow
         case .gearshape:
-            return .orange
+            return .gray
         }
     }
     
@@ -50,7 +50,6 @@ struct NavBar: View {
                             }
                         }
                     Spacer()
-                        
                     
                 }
             }
